@@ -1,0 +1,18 @@
+.nav{
+    border: 0.5rem rgba(240, 131, 160, 0.986) solid;
+    border-radius: 5rem;  
+    margin-top: 3rem;    
+    padding: 0.5rem;
+}
+.home{
+    background-color: rgb(144, 96, 189);    
+    font-size: 1.5rem;
+    color: palevioletred;
+    border-radius: 2rem;
+}
+.about{
+    background-color: rgb(144, 96, 189);    
+    font-size: 1.5rem;
+    color: palevioletred;
+    border-radius: 2rem;
+}

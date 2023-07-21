@@ -1,0 +1,12 @@
+.cajita {
+  border-radius: 6rem;
+  margin-top: 5rem;
+  background-color: rgba(137, 43, 226, 0.541);
+  border-style: dashed;
+}
+.submit {
+  background-color: rgb(144, 96, 189);
+  font-size: 1.5rem;
+  color: rgb(245, 231, 235);
+  border-radius: 2rem;
+}
