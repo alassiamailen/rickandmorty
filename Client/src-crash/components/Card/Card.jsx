@@ -18,7 +18,7 @@ function Card(props) {
 
       }
       if(!state){
-         setIsFav(true)
+         setIsFav(false)
          props.addFav(props)
       }
    }
@@ -36,9 +36,9 @@ function Card(props) {
          <div className={style.contenedor}>
                {
                isFav ? (
-                  <button onClick={()=>handleFavorite(isFav)} className={style.corazon}>❤️</button>
+                  <button onClick={()=>handleFavorite()} className={style.corazon}>❤️</button>
                ) : (
-                  <button onClick={()=>handleFavorite(isFav)} className={style.corazon}>🤍</button>
+                  <button onClick={()=>handleFavorite()} className={style.corazon}>🤍</button>
                )
                }
 
