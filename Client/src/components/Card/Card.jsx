@@ -6,16 +6,17 @@ import { useState,useEffect } from "react";
 import { reducer} from "../../Redux/reducer"
 
 function Card(props) {
-
    const myFavorites=useSelector((state)=>state.myFavorites)
 
    const [isFav,setIsFav]=useState(false);
 
+   console.log(props);
+
    const handleFavorite=(state)=>{
-      if(state){
+      console.log(myFavorites)
+      if(state){         
          setIsFav(false)
          props.removeFav(props.id)
-
       }
       if(!state){
          setIsFav(true)

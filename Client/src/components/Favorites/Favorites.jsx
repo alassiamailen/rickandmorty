@@ -12,7 +12,11 @@ const Favorites = (props) => {
 
   const handleOrder = (event)=>{ 
         dispatch(orderCards(event.target.value))
-        setAux(true)
+        if(aux){
+          setAux(false)
+        }else{
+          setAux(true)
+        }
       }
   const handleFilter = (event)=>{
     dispatch(filterCards(event.target.value))
@@ -21,7 +25,7 @@ const Favorites = (props) => {
     <>
       {props.myfavorites?.map((fav) => {
         return (
-          <Card
+          <Card          
             key={fav.id}
             id={fav.id}
             name={fav.name}

@@ -3,7 +3,7 @@ const server = express();
 const PORT = 3001;
 const characterRouter=require('./routes/characters')
 const login = require('./routes/login');
-const { FavRouter } = require('./routes/handleFav');
+const FavRouter = require('./routes/handleFav');
 //rutas modularizadas
 //ver codeReview de hernan clase de Express 
 server.use((req, res, next) => {
@@ -19,10 +19,15 @@ server.use((req, res, next) => {
    );
    next();
 });
-server.use(express.json())
-server.use("/character",characterRouter)
-server.use('/login',login)
-server.use('/fav',FavRouter)
+// server.use(express.json())
+
+// server.use("/character",characterRouter)
+// server.use("/login",login)
+// server.use("/fav",FavRouter)
+
+server.listen(3001, () => {
+   console.log('Server listen on port 3001')
+})
 
 
 
